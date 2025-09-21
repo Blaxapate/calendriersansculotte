@@ -1319,5 +1319,17 @@
 \ifnum\value{jour}>30
 \stepcounter{mois}\addtocounter{jour}{-30}\else\fi
 
+%customising options
+\newcommand{\ose}{ose}
+\newcommand{\epag}{Sansculottide}
+\newcommand{\delan}{}
+\newcommand{\annee}{\thean}
+\DeclareOption{parigot}{\renewcommand{\ose}{ôse}}
+\DeclareOption{tiret}{\renewcommand{\epag}{Sans-culottide}}
+\DeclareOption{compl}{\renewcommand{\epag}{Complémentaire}}
+\DeclareOption{delan}{\renewcommand{\delan}{de l'an }}
+\DeclareOption{romain}{\renewcommand{\annee}{\Roman{an}}}
+\ProcessOptions\relax
+
 %redefine \today
 \renewcommand{\today}{\thejour\ \ifcase\value{mois}Vendémiaire\or Brumaire\or Frimaire\or Nivose\or Pluviose\or Ventose\or Germinal\or Floréal\or Prairial\or Messidor\or Thermidor\or Fructidor\or Sansculottide\fi\ \thean}
