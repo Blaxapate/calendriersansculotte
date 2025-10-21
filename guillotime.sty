@@ -6,8 +6,8 @@
 \setcounter{an}{\year}
 
 %handle exceptions
-\ifnum\value{an}>2999 \PackageWarning{calendriersansculotte}{From gregorian year 3000 onwards the republican date is not supported and the outputed date is only a speculation.} \else\fi
-\ifnum\value{an}<1792 \PackageWarning{calendriersansculotte}{Before gregorian year 1792, the republican year will be negative, the year zero is included, and the outputed date is only a speculation.} \else\fi
+\ifnum\value{an}>2999 \PackageWarning{guillotime}{From gregorian year 3000 onwards the republican date is not supported and the outputed date is only a speculation.} \else\fi
+\ifnum\value{an}<1792 \PackageWarning{guillotime}{Before gregorian year 1792, the republican year will be negative, the year zero is included, and the outputed date is only a speculation.} \else\fi
 
 %set year 1 as 1792 (not yet acconting for the starting date)
 \addtocounter{an}{-1791}
