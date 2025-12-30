@@ -1335,7 +1335,7 @@
 %the package is known to clash with Babel, and other packages, which redefine \today as well. We also create commands \aujourdhui qui fonctionne comme \today, et \jourdaujourdhui, \moisdaujourdhui et \andaujourdhui, qui retournent individuellement le jour, le mois, et l'an.
 %Jme suis mise à parler français là d'un coup ! Tant pis pour les goddamns.
 
-\newcommand{\jourdaujourdhui}{thejour}
+\newcommand{\jourdaujourdhui}{\thejour}
 \newcommand{\moisdaujourdhui}{\ifcase\value{mois}Vendémiaire\or Brumaire\or Frimaire\or Niv\ose\or Pluvi\ose\or Vent\ose\or Germinal\or Floréal\or Prairial\or Messidor\or Thermidor\or Fructidor\or\epag\fi}
 \newcommand{\andaujourdhui}{\thean}
 
